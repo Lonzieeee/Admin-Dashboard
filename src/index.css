@@ -1,0 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* lAYOUT STYLES */
+.app-container {
+  display: flex;
+}
+
+.content-area {
+  flex-grow: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+
+
+/* SIDEBAR STYLES */
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color:#000 ;
+  color: #E7B8A5;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: 'Segoe UI', sans-serif;
+  border-right: 2px solid #E7B8A5;
+}
+.sidebar .logo{
+  font-size: 24px;
+  font-weight: bold;
+  color: #E7B8A5;
+  margin-bottom: 30px;
+}
+.sidebar .nav-links{
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar .nav-links li{
+  margin-bottom: 20px;
+}
+.sidebar .nav-links li a {
+  color: #E7B8A5;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.sidebar .nav-links li a:hover{
+  background-color: #B76E79;
+  color:#ffffff;
+
+}
+/* NAVBAR STLES */
+
+
+.navbar{
+  height: 60px;
+  background-color: #36454f;
+  color: #E7B8A5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 250px);
+  left: 250px;
+  
+
+}
+.navbar .search-bar input{
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+}
+.navbar .profile{
+  display: flex;
+  align-items: center;
+}
+.profile-img {
+  border-radius: 50%;
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid #E7B8A5;
+}
+
+.navbar .profile span {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+/* Main Content*/
+.main-content {
+  margin-left: 250px; 
+  margin-top: 60px; 
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  color: #2C3E50;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #7F8C8D; 
+}
+
+
