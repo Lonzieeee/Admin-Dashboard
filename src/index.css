@@ -140,4 +140,62 @@ html, body {
   color: #7F8C8D; 
 }
 
+/* PRODUCTS */
 
+.product-management {
+  padding: 20px;
+  padding-top: 5%;
+  margin-left: 250px;
+  
+}
+.add-product-form {
+  margin-bottom: 2rem;
+}
+.add-product-form input {
+  margin-right: 15%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.add-product-form button {
+  padding: 0.7rem 1.5rem;
+  background-color: #ff9f9f;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.add-product-form button:hover {
+  background-color: #ff6262;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th, table td{
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+
+}
+
+table th {
+  background-color: #f4f4f4;
+
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+ table td button {
+  padding: 6px 12px;
+  margin-right: 0.5rem;
+background-color: #ff5c5c;
+border: none;
+cursor: pointer;
+
+}
+
+button:hover{
+  background-color: #ff0000;
+}

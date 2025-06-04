@@ -9,7 +9,7 @@ const Sidebar = () => {
                     <Link to="/">Dashboard</Link>
                     </li>
                     <li>
-                        <Link to="user-management">User Management</Link>
+                        <Link to="/user-management">User Management</Link>
                     </li>
                     <li>
                         <Link to="/product-management">Product Management</Link>

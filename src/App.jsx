@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 // PAGE
 
 import DashboardPage from "./pages/DashboardPage";
+import Products from "./pages/Products";
+import Users from "./pages/Users";
 
 const App = () => {
   return (
@@ -20,6 +22,10 @@ const App = () => {
 
           <Routes>
             <Route path="/" element={<DashboardPage />} />
+
+
+          <Route path="/product-management" element={<Products />} />
+          <Route path="/user-management" element={<Users />} />
            
           </Routes>
 
