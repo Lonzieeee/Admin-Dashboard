@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
 import './index.css';
+import Login from "./components/Login";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 
@@ -21,7 +22,8 @@ const App = () => {
           <Navbar />
 
           <Routes>
-            <Route path="/" element={<DashboardPage />} />
+            <Route path="/" element = {<Login />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
 
 
           <Route path="/product-management" element={<Products />} />

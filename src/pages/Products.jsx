@@ -92,8 +92,43 @@ const Products = () => {
                 placeholder='Category'
                 required
                 />
-                <button type='submit'>Add Product</button>
+                <input 
+                type='text'
+                name='image'
+                value={newProduct.image}
+                onChange={handleInputChange}
+                placeholder='Image URL'
+                
+                />
+                <input
+                name='description'
+                value={newProduct.description}
+                onChange={handleInputChange}
+                placeholder='Product Description'
+                />
+                <input
+                type='text'
+                name='size'
+                value={newProduct.size}
+                onChange={handleInputChange}
+                placeholder='Size (e.g., 42,M,L)'
+                required
+                />
+                <input
+                type='number'
+                name='stock'
+                value={newProduct.stock}
+                onChange = {handleInputChange}
+                placeholder='Stock Quantity'
+                required
 
+
+                 />
+                 <button type='submit'>Add Product</button>
+
+
+
+                
  
                 
                  </form>
@@ -104,6 +139,10 @@ const Products = () => {
                             <th>Product Name</th>
                             <th>Price</th>
                             <th>Category</th>
+                             <th>Image</th>
+                              <th>Description</th>
+                               <th>Size</th>
+                               <th>Stock</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -114,6 +153,10 @@ const Products = () => {
                                 <td>{product.name}</td>
                                 <td>{product.price}</td>
                                 <td>{product.category}</td>
+                                <td><img src = {product.image} alt = {product.name} style={{width: '50px'}} /></td>
+                                <td>{product.description}</td>
+                                <td>{product.size}</td>
+                                <td>{product.stock}</td>
                                 <td>
                                      <button onClick={() => handleDeleteProduct(product.id)}>Delete</button>
                                 </td>

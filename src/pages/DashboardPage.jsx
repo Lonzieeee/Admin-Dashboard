@@ -1,5 +1,7 @@
-import { div } from "framer-motion/client";
+
 import React from "react";
+import Sidebar from "../components/Sidebar";
+import Products from "./Products";
  const DashboardPage = () => {
     return (
         <div className = "main-content">
